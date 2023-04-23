@@ -1,0 +1,19 @@
+<div>
+    <h1>Products List</h1>
+    <table class="center m-5">
+        <thead>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Price</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of productList">
+                <td>{{item.productName}}</td>
+                <td>&lt;No Image&gt;</td>
+                <td>${{item.price}}</td>
+                <td><a href="#" routerLink="/order">Add to Cart</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

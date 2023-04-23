@@ -1,0 +1,15 @@
+table{
+    text-align: center;
+    color: black;
+}
+
+table td, table th{
+    border: 1px solid cyan;
+    padding: 10px;
+    min-width: 150px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }

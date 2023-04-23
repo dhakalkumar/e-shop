@@ -1,0 +1,22 @@
+<div class="m-5">
+    <br />
+    <h1>My Orders</h1>
+    <table class="center m-5">
+        <thead>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total price</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of orderList">
+                <td>{{item.productName}}</td>
+                <td>&lt;No Image&gt;</td>
+                <td>{{item.quantity}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.quantity}}*{{item.price}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
